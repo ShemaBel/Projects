@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  body {
+  background-image: url(images/loginn.png);
+  background-repeat:no-repeat;
+background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  margin-left:  300px;
+}
+
+h1 {
+color: rgb(188, 151, 103);
+  margin-bottom: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+h1:hover{
+    color: rgb(109, 50, 8);
+    cursor: pointer;
+
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: background-color 0.3s ease;
+  color: #8e7272;
+}
+
+input:hover {
+  background-color: #e8e8e8;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+background-color: rgb(183, 159, 121);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(184, 154, 109);
+}
+
+.or-container {
+  margin: 20px auto 15px;
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+}
+.log:hover{
+   color: grey;
+    font-weight: bold;
+
+}
+.bt:hover{
+    color: gray;
+    font-weight: bold;
+
+    
+
+}
+
+
+.or {
+  margin: 0 10px}
+
+
+
+  header{
+   
+   width: 20px;
+   height: 30px;
+}
+
+.menu {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+}
+
+.menu li {
+   position: relative;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.menu li a{
+   text-decoration: none;
+   padding: 15px 20px;
+   color: #c32727;
+   display: block;
+   transition: background-color 0.3s;
+}
+
+.menu li:hover a {
+   background-color: peachpuff;
+}
+
+.submenu:hover .dropdown {
+   display: block;
+}
+
+.submenu .dropdown {
+   display: none;
+
+   background-color: #cca286;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+}
+
+.submenu .dropdown li {
+   display: block;
+   padding: 3px 10px;
+   margin-left: -35px;
+
+}
+
+.submenu .dropdown li a {
+   color: #1c1a1a;
+}
+
+.menu li a:hover {
+   background-color: #b9b1a7;
+}
+.pos{
+height: 700px;
+   float: right;
+   margin-right: 100px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header class="pos">
+    <ul class="menu">
+        <li><a href="acc2.html" style="font-family: Trattatello, fantasy;" > 
+             <i class="fa-solid fa-house-chimney fa-bounce" style="color: #c71f1f;"></i>Home</a>
+            </li>
+        <li class="submenu"> 
+            <a href="categories.html"style="font-family: Trattatello, fantasy;"> <i class="fa-solid fa-grip-vertical fa-bounce" style="color: #e11c0e;"></i> Categories</a>     
+                     <ul class="dropdown">
+                <li ><a href="hair.html" style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-scissors fa-fade"></i>Hair</a></li>
+                <li ><a href="body.html" style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-wand-magic-sparkles fa-fade"></i>Body</a></li>
+                <li><a href="skincare.html"  style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-droplet fa-fade"></i>Skin Care</a></li>
+                <li><a href="makeup.html"  style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-brush fa-fade"></i>Makeup</a></li>
+                <li><a href="perfume.html"  style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-spray-can fa-fade"></i>Perfume</a></li>
+            </ul>
+        </li>
+        <li><a href="login.html"  style="font-family: Trattatello, fantasy;"> <i class="fa-solid fa-floppy-disk fa-bounce" style="color: #f01e0f;"></i>Login</a></li>
+        <li><a href="mailto:chema.belhedi@gmail.com"  style="font-family: Trattatello, fantasy;"><i class="fa-solid fa-phone fa-bounce" style="color: #e82626;"></i>Contact</a></li>
+    </ul>
+</header>
+
+
+
+
+  <div class="login-container">
+    <h1><i class="fa-solid fa-arrow-right-to-bracket fa-fade"> Login </i></h1>
+    <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit" class="log">Login</button>
+
+      <div class="or-container">
+        <hr class="divider">
+        <span class="or">or</span>
+        <hr class="divider">
+      </div>
+
+      <button class="bt">Login with Gmail</button>
+    </form>
+  </div>
+</body>
+</html>
